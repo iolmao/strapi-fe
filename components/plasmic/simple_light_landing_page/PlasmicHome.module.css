@@ -319,7 +319,16 @@
   justify-content: center;
   align-items: center;
   min-width: 0;
+  column-gap: 32px;
+  row-gap: 34px;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .strapiCollection:global(.__wab_instance) {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
 }
 .tweetCard:global(.__wab_instance) {
   position: relative;
